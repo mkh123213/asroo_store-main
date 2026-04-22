@@ -1,0 +1,20 @@
+
+default_platform(:android)
+
+# To run the lane, execute the following command:
+# bundle exec fastlane firebase_distribution
+
+platform :android do
+  desc "Lane for Android Firebase App Distribution"
+  lane :firebase_distribution do
+   
+    firebase_app_distribution(
+        app: "1:469786342253:android:e03ff7dbb7c53e7ef46064",
+        firebase_cli_token: "1//03yHSrbBkqgi7CgYIARAAGAMSNwF-L9IrtdcA5OrahXrWCPKBxHIDi6b15fkXri13Y6yx4wgIWh8YqKbdPWgkdVlmUmNYFKsVZho",
+        android_artifact_type: "APK",
+        android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
+        testers: "mohammadwork199700@gmail.com",
+        release_notes: "Testing something with GitHub Actions, trying to push directly from master branch",
+  )
+  end
+end
