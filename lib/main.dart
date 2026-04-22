@@ -16,7 +16,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 // test3
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+// d
   await EnvVariable.instance.init(envType: EnvTypeEnum.dev);
 
 //  "current_key": "AIzaSyBDzognjD6pwp6oKKOoEkklgOunZo3W-fs" ==> apiKey
